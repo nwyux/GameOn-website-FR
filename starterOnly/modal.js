@@ -174,6 +174,7 @@ class FormHandler {
     // Create a success message
     const successMessage = document.createElement("div");
     successMessage.className = "success-message";
+    successMessage.style.marginTop = "10rem";
     successMessage.textContent = "Merci pour votre inscription!";
     
     // Add the success message to the modal
@@ -183,6 +184,7 @@ class FormHandler {
     // Add a close button to the success message
     const closeButton = document.createElement("button");
     closeButton.className = "btn-submit close-button";
+    closeButton.style.marginTop = "20rem";
     closeButton.textContent = "Fermer";
     closeButton.addEventListener("click", this.closeModal);
     
@@ -190,7 +192,7 @@ class FormHandler {
   }
 }
 
-// Add the navigation function separately, or include it in another class if needed
+// Responsive navigation menu
 function editNav() {
   var x = document.getElementById("myTopnav");
   if (x.className === "topnav") {
